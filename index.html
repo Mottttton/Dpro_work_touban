@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>当番決め</title>
     <link href="stylesheets/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    1234
+    <h1>当番を決めよう！</h1>
+    <div>
+      <p>参加メンバーを選ぼう</p>
+      <button id="checkAll">全員参加</button>
+      <div>
+        <form action="GET" id="form">
+          <label name="name" for="1">
+            <div class="member">
+              <input type="checkbox" name="person" id="1" value="鶴" checked>鶴
+            </div>
+          </label>
+          <label name="name" for="2">
+            <div class="member">
+              <input type="checkbox" name="person" id="2" value="小寺" checked>小寺
+            </div>
+          </label>
+          <label name="name" for="3">
+            <div class="member">
+              <input type="checkbox" name="person" id="3" value="大西" checked>大西
+            </div>
+          </label>
+          <label name="name" for="4">
+            <div class="member">
+              <input type="checkbox" name="person" id="4" value="佐藤" checked>佐藤
+            </div>
+          </label>
+          <label name="name" for="5">
+            <div class="member">
+              <input type="checkbox" name="person" id="5" value="岡本" checked>岡本
+            </div>
+          </label>
+          <label name="name" for="6">
+            <div class="member">
+              <input type="checkbox" name="person" id="6" value="村松" checked>村松
+            </div>
+          </label>
+          <label name="name" for="7">
+            <div class="member">
+              <input type="checkbox" name="person" id="7" value="岸田" checked>岸田
+            </div>
+          </label>
+          <label name="name" for="8">
+            <div class="member">
+              <input type="checkbox" name="person" id="8" value="相方" checked>相方
+            </div>
+          </label>
+        </form>
+      </div>
+      <button id="lotery">抽選開始</button><button id="reset">やりなおす</button>
+      <div id="result">
+        <p>明日の当番</p>
+      </div>
+    </div>
+
     <script type="text/javascript" src="javascripts/main.js"></script>
   </body>
+
 </html>
