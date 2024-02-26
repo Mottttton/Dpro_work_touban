@@ -1,0 +1,82 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+}
+
+$cWhite: white;
+$cBlack: black;
+$cBgJoin: aqua;
+$cBgNotJoin : #888;
+$cBGNextTurn : yellow;
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  & input:checked {
+    
+    & .member {
+      background-color: $cBgJoin;
+    }
+  }
+
+  & .member{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 1px solid $cBlack;
+    margin: 5px;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    
+    &.not_join {
+      background-color: $cBgNotJoin;
+      text-decoration: line-through;
+    }
+  }
+}
+
+#next_turn {
+  background-color: $cBGNextTurn;
+}
+
+.btn_container{
+  margin-top: 20px;
+  display: flex;
+  
+  & .btn {
+    position: relative;
+    display: inline-block;
+    background-color: $cWhite;
+    border: 1px solid $cBlack;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: $cBlack;
+    text-decoration: none !important;
+    &:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 5px 5px 0px 0px rgb(0, 0, 0, 1);
+    }
+    &:active{
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
